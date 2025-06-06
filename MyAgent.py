@@ -5,7 +5,7 @@ class Agent:
         lidar = observations['lidar']
         velocity = observations['velocity']
 
-        left, mid_left, center, mid_right, right = lidar
+        left, mid_left  , center, mid_right, right = lidar
         side_balance = left - right
         if velocity < 0.05:
             return ('straight','accelerate')
