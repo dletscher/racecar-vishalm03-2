@@ -17,11 +17,11 @@ class Agent:
             return('left','coast')
         if center > 3.5 and center < 5.0:
             return('straight', 'accelerate')
-        if side_balance > 0.3:
+        if side_balance > 0.35:
             return('left','brake')
         elif side_balance > 0.1:
             return('left','accelerate')
-        elif side_balance < -0.3:
+        elif side_balance < -0.35:
             return('right','brake')
         elif side_balance < -0.1:
             return('right','accelerate')
